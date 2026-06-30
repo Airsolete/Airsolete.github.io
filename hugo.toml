@@ -1,7 +1,109 @@
 baseURL = 'https://Airsolete.github.io/'
-locale = 'zh-cn'
-title = 'My New Hugo Project'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+title = 'Airsolete'
 theme = 'PaperMod'
+timeZone = 'Asia/Shanghai'
+paginate = 8
+hasCJKLanguage = true
+enableRobotsTXT = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+[params]
+  env = 'production'
+  title = 'Airsolete'
+  description = 'Airsolete 的个人博客，记录学习、科研、项目和生活思考。'
+  keywords = ['Blog', 'Hugo', 'PaperMod', '学习', '科研', '项目']
+  author = 'Airsolete'
+  DateFormat = '2006-01-02'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  showtoc = true
+  tocopen = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = '你好，我是 Airsolete'
+    Content = '这里会记录我的学习笔记、科研探索、项目实践和一些阶段性的思考。慢慢搭建，持续更新。'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/Airsolete'
+
+  [[params.socialIcons]]
+    name = 'rss'
+    url = 'index.xml'
+
+  [params.assets]
+    disableHLJS = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 1
+    keys = ['title', 'permalink', 'summary', 'content']
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = '首页'
+    url = '/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'archives'
+    name = '归档'
+    url = '/archives/'
+    weight = 30
+
+  [[menu.main]]
+    identifier = 'tags'
+    name = '标签'
+    url = '/tags/'
+    weight = 40
+
+  [[menu.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 50
+
+  [[menu.main]]
+    identifier = 'about'
+    name = '关于'
+    url = '/about/'
+    weight = 60
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
 
 [caches]
   [caches.images]

@@ -3,8 +3,9 @@ title: "我的第一篇博客"
 date: 2026-06-30
 draft: false
 summary: "从这里开始记录我的个人博客搭建过程，以及之后的学习、科研和项目实践。"
-categories: ["随笔"]
-tags: ["Hugo", "GitHub Pages", "博客"]
+categories: ["技术笔记"]
+tags: ["Hugo", "GitHub Pages", "PaperMod", "博客搭建"]
+series: ["博客建设"]
 ---
 
 这是我的第一篇个人博客，用来记录学习、科研和项目过程。

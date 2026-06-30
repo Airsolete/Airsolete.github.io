@@ -1,0 +1,138 @@
+:root {
+  --main-width: 760px;
+  --nav-width: 1040px;
+  --article-gap: 22px;
+  --radius: 8px;
+  --content: rgb(36, 39, 45);
+  --secondary: rgb(92, 99, 112);
+  --tertiary: rgb(226, 231, 238);
+  --code-bg: rgb(246, 248, 250);
+  --entry: rgb(255, 255, 255);
+  --theme: rgb(250, 251, 252);
+  --link-color: rgb(35, 93, 171);
+  --border: rgb(225, 229, 235);
+}
+
+.dark {
+  --content: rgb(226, 232, 240);
+  --secondary: rgb(164, 174, 190);
+  --tertiary: rgb(51, 60, 75);
+  --code-bg: rgb(28, 33, 41);
+  --entry: rgb(24, 29, 37);
+  --theme: rgb(16, 20, 27);
+  --link-color: rgb(137, 181, 255);
+  --border: rgb(49, 58, 72);
+}
+
+body {
+  font-family: "LXGW WenKai Screen", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.75;
+}
+
+.logo a {
+  font-weight: 760;
+}
+
+.nav a {
+  font-size: 15px;
+}
+
+.home-info {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--entry);
+  padding: 28px;
+}
+
+.home-info .entry-header h1 {
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.home-info .entry-content {
+  color: var(--secondary);
+  font-size: 16px;
+}
+
+.post-entry {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.post-entry:hover {
+  border-color: var(--link-color);
+  transform: translateY(-2px);
+}
+
+.entry-header h2 {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.entry-content {
+  color: var(--secondary);
+}
+
+.post-content {
+  font-size: 17px;
+}
+
+.post-content h2,
+.post-content h3 {
+  margin-top: 2.1em;
+}
+
+.post-content a {
+  color: var(--link-color);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.post-content blockquote {
+  border-inline-start: 4px solid var(--link-color);
+  background: var(--code-bg);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 12px 16px;
+}
+
+.post-content code {
+  border-radius: 5px;
+  padding: 0.12em 0.35em;
+}
+
+.post-content pre code {
+  padding: 0;
+}
+
+.terms-tags a,
+.post-tags a {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--entry);
+}
+
+.toc {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--entry);
+}
+
+@media (max-width: 768px) {
+  .home-info {
+    padding: 22px;
+  }
+
+  .home-info .entry-header h1 {
+    font-size: 28px;
+  }
+
+  .post-entry {
+    padding: 18px;
+  }
+
+  .post-content {
+    font-size: 16px;
+  }
+}

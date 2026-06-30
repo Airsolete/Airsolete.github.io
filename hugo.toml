@@ -19,8 +19,8 @@ enableRobotsTXT = true
 [params]
   env = 'production'
   title = 'Airsolete'
-  description = 'Airsolete 的个人博客，记录学习、科研、项目和生活思考。'
-  keywords = ['Blog', 'Hugo', 'PaperMod', '学习', '科研', '项目']
+  description = 'Airsolete 的个人知识库，长期记录学习笔记、科研探索、项目实践与技术思考。'
+  keywords = ['Blog', 'Hugo', 'PaperMod', '学习笔记', '科研记录', '项目实践', '技术笔记']
   author = 'Airsolete'
   DateFormat = '2006-01-02'
   defaultTheme = 'auto'
@@ -36,10 +36,11 @@ enableRobotsTXT = true
   showtoc = true
   tocopen = false
   comments = false
+  mainSections = ['posts']
 
   [params.homeInfoParams]
     Title = '你好，我是 Airsolete'
-    Content = '这里会记录我的学习笔记、科研探索、项目实践和一些阶段性的思考。慢慢搭建，持续更新。'
+    Content = '这里是我的个人知识库，用来长期记录学习笔记、科研探索、项目实践和技术思考。文章会按分类、标签和专题系列整理，方便回看，也方便持续积累。'
 
   [[params.socialIcons]]
     name = 'github'
@@ -75,9 +76,9 @@ enableRobotsTXT = true
     weight = 20
 
   [[menu.main]]
-    identifier = 'archives'
-    name = '归档'
-    url = '/archives/'
+    identifier = 'categories'
+    name = '分类'
+    url = '/categories/'
     weight = 30
 
   [[menu.main]]
@@ -87,16 +88,22 @@ enableRobotsTXT = true
     weight = 40
 
   [[menu.main]]
+    identifier = 'archives'
+    name = '归档'
+    url = '/archives/'
+    weight = 50
+
+  [[menu.main]]
     identifier = 'search'
     name = '搜索'
     url = '/search/'
-    weight = 50
+    weight = 60
 
   [[menu.main]]
     identifier = 'about'
     name = '关于'
     url = '/about/'
-    weight = 60
+    weight = 70
 
 [markup]
   [markup.highlight]

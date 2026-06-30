@@ -1,0 +1,8 @@
+baseURL = 'https://Airsolete.github.io/'
+locale = 'zh-cn'
+title = 'My New Hugo Project'
+theme = 'PaperMod'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

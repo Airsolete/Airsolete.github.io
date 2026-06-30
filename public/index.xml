@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Project</title>
+    <title>Airsolete</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Project</description>
+    <description>Recent content on Airsolete</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 30 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;你好，我是 Airsolete。&lt;/p&gt;
+&lt;p&gt;这个博客会用来记录学习笔记、科研探索、项目实践，以及一些值得留下来的想法。现在它还很新，但会一点点长成更完整的个人空间。&lt;/p&gt;
+&lt;p&gt;你可以从文章、标签或归档页面开始浏览。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>我的第一篇博客</title>
       <link>http://localhost:1313/posts/first-post/</link>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>&lt;p&gt;这是我的第一篇个人博客，用来记录学习、科研和项目过程。&lt;/p&gt;</description>
+      <description>从这里开始记录我的个人博客搭建过程，以及之后的学习、科研和项目实践。</description>
     </item>
   </channel>
 </rss>

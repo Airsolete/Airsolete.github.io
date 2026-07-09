@@ -13,7 +13,7 @@
   --border: rgb(225, 229, 235);
 }
 
-.dark {
+:root[data-theme="dark"] {
   --content: rgb(226, 232, 240);
   --secondary: rgb(164, 174, 190);
   --tertiary: rgb(51, 60, 75);

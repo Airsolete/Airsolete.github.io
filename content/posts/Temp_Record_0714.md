@@ -28,13 +28,13 @@ series: ["Cadence"]
 * 后仿时由于电路网表中的节点很多，不要直接save all
 * 在mastero中， 依次选择Outputs→Save All...→allpub改选为selected，currents选择none
 
-![image-20260709194925480](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260709194925480.png)
+![image-20260709194925480](/images/posts/temp-record-0714/image-20260709194925480.png)
 
-![image-20260709195052559](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260709195052559.png)
+![image-20260709195052559](/images/posts/temp-record-0714/image-20260709195052559.png)
 
 * 然后在Outputs→To Be Saved→Select On Design，此时界面会跳转到原理图，可以选择要保存的节点
 
-![image-20260709195325049](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260709195325049.png)
+![image-20260709195325049](/images/posts/temp-record-0714/image-20260709195325049.png)
 
 ### 在explorer界面跑仿真，不会保存过往仿真数据，要上升到assembler里面才能保存！
 
@@ -79,6 +79,6 @@ Amplitude = 差分峰值
 
 ## VA XL快捷键
 
-![image-20260714120203243](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20260714120203243.png)
+![image-20260714120203243](/images/posts/temp-record-0714/image-20260714120203243.png)
 
 * 先M再D可以查看两点之间的dx和dy

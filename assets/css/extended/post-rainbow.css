@@ -1,0 +1,192 @@
+/* Article reading style adapted from the Typora Rainbow theme. */
+:root {
+  --rainbow-heading-border: rgb(255, 177, 177);
+  --rainbow-heading-bg: rgb(255, 238, 238);
+  --rainbow-table-border: rgb(255, 226, 193);
+  --rainbow-table-head: rgb(255, 242, 224);
+  --rainbow-table-row: rgb(255, 249, 241);
+  --rainbow-table-hover: rgb(254, 255, 229);
+  --rainbow-code-bg: rgb(247, 248, 250);
+  --rainbow-quote-border: rgb(133, 179, 255);
+  --rainbow-quote-bg: rgb(245, 249, 255);
+  --rainbow-muted: rgb(102, 112, 128);
+  --rainbow-shadow: 0 10px 24px rgba(42, 52, 67, 0.12);
+}
+
+:root[data-theme="dark"] {
+  --rainbow-heading-border: rgb(158, 88, 105);
+  --rainbow-heading-bg: rgb(55, 35, 43);
+  --rainbow-table-border: rgb(94, 72, 52);
+  --rainbow-table-head: rgb(56, 45, 35);
+  --rainbow-table-row: rgb(38, 34, 30);
+  --rainbow-table-hover: rgb(48, 50, 35);
+  --rainbow-code-bg: rgb(30, 35, 44);
+  --rainbow-quote-border: rgb(110, 155, 230);
+  --rainbow-quote-bg: rgb(28, 36, 49);
+  --rainbow-muted: rgb(169, 178, 193);
+  --rainbow-shadow: none;
+}
+
+.post-single {
+  max-width: 840px;
+}
+
+.post-title {
+  text-align: center;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.post-content {
+  font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.82;
+}
+
+.post-content > :first-child {
+  margin-top: 0;
+}
+
+.post-content h2 {
+  margin: 2.2em -0.6rem 1em;
+  padding: 0.48rem 0.9rem;
+  border-left: 0.42rem solid var(--rainbow-heading-border);
+  border-radius: 8px;
+  background: var(--rainbow-heading-bg);
+  font-size: 1.55rem;
+  line-height: 1.35;
+}
+
+.post-content h3 {
+  margin-top: 2em;
+  font-size: 1.32rem;
+  text-decoration: underline double var(--rainbow-heading-border) 0.12rem;
+  text-underline-offset: 0.24em;
+}
+
+.post-content h4 {
+  margin-top: 1.7em;
+  text-decoration: underline dotted var(--rainbow-heading-border) 0.16rem;
+  text-underline-offset: 0.22em;
+}
+
+.post-content p,
+.post-content li {
+  line-height: 1.82;
+}
+
+.post-content blockquote {
+  position: relative;
+  margin: 1.45rem 0;
+  padding: 0.85rem 1rem 0.9rem 1.15rem;
+  border-left: 0.28rem solid var(--rainbow-quote-border);
+  border-radius: 0 8px 8px 0;
+  background: var(--rainbow-quote-bg);
+  color: var(--rainbow-muted);
+}
+
+.post-content blockquote::before {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--rainbow-quote-border);
+  content: "Rainbow note";
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.post-content table {
+  width: 100%;
+  border: 0.2rem solid var(--rainbow-table-border);
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.post-content th,
+.post-content td {
+  border: 0.1rem dashed var(--rainbow-table-border);
+  padding: 0.58rem 0.7rem;
+  text-align: center;
+}
+
+.post-content th {
+  background: var(--rainbow-table-head);
+}
+
+.post-content tr:nth-child(even) {
+  background: var(--rainbow-table-row);
+}
+
+.post-content tr:hover {
+  background: var(--rainbow-table-hover);
+}
+
+.post-content code {
+  margin: 0 0.1rem;
+  padding: 0.08rem 0.34rem;
+  border-radius: 6px;
+  background: var(--rainbow-code-bg);
+  box-shadow: 0.1rem 0.1rem 0.24rem rgba(120, 128, 140, 0.22);
+  font-family: "Source Code Pro", "Cascadia Code", Consolas, "Courier New", monospace;
+}
+
+.post-content pre {
+  border-radius: 8px;
+  background: var(--rainbow-code-bg) !important;
+  box-shadow: var(--rainbow-shadow);
+}
+
+.post-content pre code {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.post-content img {
+  display: block;
+  max-width: min(100%, 760px);
+  height: auto;
+  margin: 1.35rem auto;
+  border-radius: 8px;
+  box-shadow: var(--rainbow-shadow);
+}
+
+.post-content mark {
+  border-radius: 4px;
+  background: rgb(252, 255, 200);
+  padding: 0.05rem 0.2rem;
+}
+
+.post-content del {
+  color: var(--rainbow-muted);
+}
+
+.post-content hr {
+  height: 0.13rem;
+  margin: 2rem 0;
+  border: 0;
+  background: var(--tertiary);
+}
+
+@media (max-width: 768px) {
+  .post-single {
+    max-width: 100%;
+  }
+
+  .post-content {
+    font-size: 16px;
+  }
+
+  .post-content h2 {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 1.34rem;
+  }
+
+  .post-content h3 {
+    font-size: 1.18rem;
+  }
+}
